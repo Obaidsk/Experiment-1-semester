@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    float temperature;
+    int choice;
+
+    
+    printf("Temperature Conversion Program\n");
+    printf("1. Fahrenheit to Centigrade\n");
+    printf("2. Centigrade to Fahrenheit\n");
+    printf("Enter your choice (1 or 2): ");
+    scanf("%d", &choice);
+
+    
+    if (choice == 1) {
+       
+        printf("Enter temperature in Fahrenheit: ");
+        scanf("%f", &temperature);
+        temperature = (temperature - 32) * 5 / 9;    
+        printf("Temperature in Centigrade: %.2f°C\n", temperature);
+        
+    } else if (choice == 2) {
+        
+        printf("Enter temperature in Centigrade: ");
+        scanf("%f", &temperature);
+        temperature = (temperature * 9 / 5) + 32;   
+        printf("Temperature in Fahrenheit: %.2f°F\n", temperature);
+        
+    } else {
+        
+        printf("Invalid choice! Please enter 1 or 2.\n");
+    }
+
+    return 0;
+}
