@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    // Take input from the user
+    printf("Enter three integers (a, b, c): ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    // Logical AND (&&)
+    printf("Logical AND (a > b && b > 0): %d\n", (a > b && b > 0));
+    printf("Logical AND (a > b && c > 0): %d\n", (a > b && c > 0));
+
+    // Logical OR (||)
+    printf("Logical OR (a > b || c > 0): %d\n", (a > b || c > 0));
+    printf("Logical OR (c > 0 || b < 0): %d\n", (c > 0 || b < 0));
+
+    // Logical NOT (!)
+    printf("Logical NOT (!a): %d\n", !a);
+    printf("Logical NOT (!c): %d\n", !c);
+
+    return 0;
+}
