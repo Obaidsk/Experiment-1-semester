@@ -1,0 +1,13 @@
+//basic program based on pointer
+#include<stdio.h>
+int main(){
+    int a=5,sum;
+    int* x = &a;
+    printf("a=%d\n",*x);
+    int b=5;
+    int* y = &b;
+    printf("b=%d\n",*y);
+    sum=a+b;
+    printf("sum of a+b is: %d",sum);
+    return 0;
+}
