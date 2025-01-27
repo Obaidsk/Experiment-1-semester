@@ -1,0 +1,29 @@
+#include <stdio.h>
+#define PI 3.14159
+
+int main() {
+    int radius, height;
+    float volumeCylinder, volumeSphere, volumeCone;
+
+    // Input the radius and height
+    printf("Enter the radius of the object: ");
+    scanf("%d", &radius);
+    printf("Enter the height of the object: ");
+    scanf("%d", &height);
+
+    // Calculate the volume of the cylinder
+    volumeCylinder = (float)PI * (float)(radius * radius) * (float)height;
+
+    // Calculate the volume of the sphere
+    volumeSphere = (4.0f / 3.0f) * (float)PI * (float)(radius * radius * radius);
+
+    // Calculate the volume of the cone
+    volumeCone = (1.0f / 3.0f) * (float)PI * (float)(radius * radius) * (float)height;
+
+    // Display the volumes
+    printf("Volume of Cylinder: %.2f\n", volumeCylinder);
+    printf("Volume of Sphere: %.2f\n", volumeSphere);
+    printf("Volume of Cone: %.2f\n", volumeCone);
+
+    return 0;
+}
