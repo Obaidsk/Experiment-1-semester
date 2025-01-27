@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+    int Beee,Maths,Ida,Esdm,Pbl,Communication,percentage;
+    printf("Enter the marks of BEEE:\n");
+    scanf("%d",&Beee);
+    printf("Enter the marks of MATHS:\n");
+    scanf("%d",&Maths);
+    printf("Enter the marks of IDA:\n");
+    scanf("%d",&Ida);
+    printf("Enter the marks of ESDM:\n");
+    scanf("%d",&Esdm);
+    printf("Enter the marks of PBL:\n");
+    scanf("%d",&Pbl);
+     printf("Enter the marks of Communication:\n");
+    scanf("%d",&Communication);
+    percentage= Beee+Maths+Ida+Esdm+Pbl+Communication*100/600;
+    
+    if(percentage>=33)
+    {
+    printf("pass\nKEEP IT UP");
+    }
+    else{
+        printf("fail\n TRY AGAIN");
+    }
+    return 0;
+}
